@@ -62,7 +62,7 @@ using Toybox.SensorHistory;
 using Toybox.Weather;
 using Toybox.UserProfile;
 
-var appVersion = "1.4.4"; 
+var appVersion = "1.4.5"; 
 
 var partialUpdatesAllowed = false;
 
