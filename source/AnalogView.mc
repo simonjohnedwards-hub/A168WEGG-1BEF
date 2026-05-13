@@ -3,7 +3,9 @@
 // Application Developer Agreement.
 // Written by Simon Edwards - 2018
 // ===== CASIO A171WE-1A STYLE WATCH FACE DRAWING =====
-
+// 1.4.7 - FR70/170/170m and D2 Mach 2 Pro support
+// 1.4.6 - NOT RELEASED YET
+//	- Removed Instinct 3 Solar 
 // 1.4.5 - Fixed App Name to A168WEGG-1BEF
 // 1.4.4
 //  -  Improvement to position of symbols
@@ -62,7 +64,7 @@ using Toybox.SensorHistory;
 using Toybox.Weather;
 using Toybox.UserProfile;
 
-var appVersion = "1.4.5"; 
+var appVersion = "1.4.7"; 
 
 var partialUpdatesAllowed = false;
 

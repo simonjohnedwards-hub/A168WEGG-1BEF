@@ -1,78 +1,78 @@
-[ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Math,1,13,17]; ]
+[ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Math,1,13,17]; ]
 using Toybox.Math;
-[ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 4; @symbol_classdef = [SunCal,4,6,12]; ]
+[ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 4; @symbol_classdef = [SunCal,4,6,12]; ]
 class SunCal {
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 4; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 4; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 7; @position = 5; @symbol_vardef = [latitude,7,5,13]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 7; @position = 5; @symbol_vardef = [latitude,7,5,13]; ]
     var latitude;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 8; @position = 5; @symbol_vardef = [longitude,8,5,14]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 8; @position = 5; @symbol_vardef = [longitude,8,5,14]; ]
     var longitude;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 9; @position = 5; @symbol_vardef = [julianDate,9,5,15]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 9; @position = 5; @symbol_vardef = [julianDate,9,5,15]; ]
     var julianDate;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 10; @position = 5; @symbol_vardef = [m_year,10,5,11]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 10; @position = 5; @symbol_vardef = [m_year,10,5,11]; ]
     var m_year;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 11; @position = 5; @symbol_vardef = [m_month,11,5,12]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 11; @position = 5; @symbol_vardef = [m_month,11,5,12]; ]
     var m_month;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 12; @position = 5; @symbol_vardef = [m_day,12,5,10]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 12; @position = 5; @symbol_vardef = [m_day,12,5,10]; ]
     var m_day;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 13; @position = 5; @symbol_vardef = [tzOffset,13,5,13]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 13; @position = 5; @symbol_vardef = [tzOffset,13,5,13]; ]
     var tzOffset;
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 15; @symbol_functiondef = [SunSet,15,10,16]; @symbol_param<0> = [lat,15,17,20]; @symbol_param<1> = [lon,15,21,24]; @symbol_param<2> = [tz,15,25,27]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 15; @symbol_functiondef = [SunSet,15,10,16]; @symbol_param<0> = [lat,15,17,20]; @symbol_param<1> = [lon,15,21,24]; @symbol_param<2> = [tz,15,25,27]; ]
     function SunSet(lat, lon, tz) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_16_1_21_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 17 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_16_1_21_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 17 1 ]
         %tmp.1 = lgetv %lat;
         symbol [ lat %tmp.1 17 12 15 ];
         symbol [ latitude ? 17 1 9 ];
         putv self :latitude %tmp.1;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 18 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 18 1 ]
         %tmp.2 = lgetv %lon;
         symbol [ lon %tmp.2 18 14 17 ];
         %tmp.3 = sub 0 %tmp.2;
         symbol [ longitude ? 18 1 10 ];
         putv self :longitude %tmp.3;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 19 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 19 1 ]
         %tmp.4 = 0.0;
         symbol [ julianDate ? 19 1 11 ];
         putv self :julianDate %tmp.4;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 20 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 20 1 ]
         %tmp.5 = lgetv %tz;
         symbol [ tz %tmp.5 20 12 14 ];
         symbol [ tzOffset ? 20 1 9 ];
         putv self :tzOffset %tmp.5;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_16_1_21_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_16_1_21_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 23; @symbol_functiondef = [setPosition,23,10,21]; @symbol_param<0> = [lat,23,22,25]; @symbol_param<1> = [lon,23,26,29]; @symbol_param<2> = [tz,23,30,32]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 23; @symbol_functiondef = [setPosition,23,10,21]; @symbol_param<0> = [lat,23,22,25]; @symbol_param<1> = [lon,23,26,29]; @symbol_param<2> = [tz,23,30,32]; ]
     function setPosition(lat, lon, tz) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_24_1_28_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 25 2 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_24_1_28_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 25 2 ]
         %tmp.1 = lgetv %lat;
         symbol [ lat %tmp.1 25 13 16 ];
         symbol [ latitude ? 25 2 10 ];
         putv self :latitude %tmp.1;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 26 2 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 26 2 ]
         %tmp.2 = lgetv %lon;
         symbol [ lon %tmp.2 26 15 18 ];
         %tmp.3 = sub 0 %tmp.2;
         symbol [ longitude ? 26 2 11 ];
         putv self :longitude %tmp.3;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 27 2 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 27 2 ]
         %tmp.4 = lgetv %tz;
         symbol [ tz %tmp.4 27 13 15 ];
         symbol [ tzOffset ? 27 2 10 ];
         putv self :tzOffset %tmp.4;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_24_1_28_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_24_1_28_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 30; @symbol_functiondef = [degToRad,30,10,18]; @symbol_param<0> = [angleDeg,30,19,27]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 30; @symbol_functiondef = [degToRad,30,10,18]; @symbol_param<0> = [angleDeg,30,19,27]; ]
     function degToRad(angleDeg) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_31_1_33_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 32 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_31_1_33_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 32 1 ]
         symbol [ Math %tmp.1 32 9 13 ];
         %tmp.1 = getm $.Toybox.Math;
         symbol [ PI %tmp.2 32 14 16 ];
@@ -83,12 +83,12 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_31_1_33_1_st
         %tmp.5 = 180.0;
         %tmp.6 = div %tmp.4 %tmp.5;
         ret %tmp.6;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_31_1_33_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_31_1_33_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 35; @symbol_functiondef = [radToDeg,35,10,18]; @symbol_param<0> = [angleRad,35,19,27]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 35; @symbol_functiondef = [radToDeg,35,10,18]; @symbol_param<0> = [angleRad,35,19,27]; ]
     function radToDeg(angleRad) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_36_1_38_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 37 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_36_1_38_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 37 1 ]
         %tmp.1 = 180.0;
         %tmp.2 = lgetv %angleRad;
         symbol [ angleRad %tmp.2 37 17 25 ];
@@ -99,13 +99,13 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_36_1_38_1_st
         %tmp.5 = getv %tmp.4 :PI;
         %tmp.6 = div %tmp.3 %tmp.5;
         ret %tmp.6;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_36_1_38_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_36_1_38_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 40; @symbol_functiondef = [calcMeanObliquityOfEcliptic,40,10,37]; @symbol_param<0> = [t,40,38,39]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 40; @symbol_functiondef = [calcMeanObliquityOfEcliptic,40,10,37]; @symbol_param<0> = [t,40,38,39]; ]
     function calcMeanObliquityOfEcliptic(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 42 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 42 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop" ]
         %seconds.1 = local;
         symbol [ seconds %seconds.1 42 5 12 ];
         %tmp.1 = 21.448;
@@ -126,8 +126,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_st
         %tmp.13 = sub %tmp.1 %tmp.12;
         lputv %seconds.1 %tmp.13;
         symbol [ seconds %seconds.1 42 5 12 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 43 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 43 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop" ]
         %e0.2 = local;
         symbol [ e0 %e0.2 43 5 7 ];
         %tmp.14 = 23.0;
@@ -142,17 +142,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_st
         %tmp.22 = add %tmp.14 %tmp.21;
         lputv %e0.2 %tmp.22;
         symbol [ e0 %e0.2 43 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 44 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 44 1 ]
         %tmp.23 = lgetv %e0.2;
         symbol [ e0 %tmp.23 44 8 10 ];
         ret %tmp.23;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_41_1_45_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 47; @symbol_functiondef = [calcGeomMeanLongSun,47,10,29]; @symbol_param<0> = [t,47,30,31]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 47; @symbol_functiondef = [calcGeomMeanLongSun,47,10,29]; @symbol_param<0> = [t,47,30,31]; ]
     function calcGeomMeanLongSun(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 49 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 49 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_stop" ]
         %L.1 = local;
         symbol [ L %L.1 49 5 6 ];
         %tmp.1 = 280.46646;
@@ -168,57 +168,57 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_st
         %tmp.9 = add %tmp.1 %tmp.8;
         lputv %L.1 %tmp.9;
         symbol [ L %L.1 49 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 50 1 ]
-        while @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 50 1 ]
+        while @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test:
         %tmp.10 = lgetv %L.1;
         symbol [ L %tmp.10 50 9 10 ];
         %tmp.11 = 360;
         %tmp.12 = gt %tmp.10 %tmp.11;
-        bf %tmp.12 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_begin:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_18_52_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 51 2 ]
+        bf %tmp.12 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_begin:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_18_52_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 51 2 ]
         %tmp.13 = lgetv %L.1;
         symbol [ L %tmp.13 51 2 3 ];
         %tmp.14 = 360.0;
         %tmp.15 = sub %tmp.13 %tmp.14;
         lputv %L.1 %tmp.15;
         symbol [ L %L.1 51 2 3 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_18_52_1_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 53 1 ]
-        while @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_18_52_1_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_test;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_50_1_52_1_while_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 53 1 ]
+        while @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test:
         %tmp.16 = lgetv %L.1;
         symbol [ L %tmp.16 53 8 9 ];
         %tmp.17 = 0;
         %tmp.18 = lt %tmp.16 %tmp.17;
-        bf %tmp.18 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_begin:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_16_55_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 54 2 ]
+        bf %tmp.18 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_begin:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_16_55_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 54 2 ]
         %tmp.19 = lgetv %L.1;
         symbol [ L %tmp.19 54 2 3 ];
         %tmp.20 = 360.0;
         %tmp.21 = add %tmp.19 %tmp.20;
         lputv %L.1 %tmp.21;
         symbol [ L %L.1 54 2 3 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_16_55_1_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 56 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_16_55_1_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_test;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_53_1_55_1_while_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 56 1 ]
         %tmp.22 = lgetv %L.1;
         symbol [ L %tmp.22 56 8 9 ];
         ret %tmp.22;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_48_1_57_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 59; @symbol_functiondef = [calcObliquityCorrection,59,10,33]; @symbol_param<0> = [t,59,34,35]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 59; @symbol_functiondef = [calcObliquityCorrection,59,10,33]; @symbol_param<0> = [t,59,34,35]; ]
     function calcObliquityCorrection(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 61 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 61 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
         %e0.1 = local;
         symbol [ e0 %e0.1 61 5 7 ];
         %tmp.1 = self;
@@ -229,8 +229,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_st
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %e0.1 %tmp.4;
         symbol [ e0 %e0.1 61 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 62 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 62 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
         %omega.2 = local;
         symbol [ omega %omega.2 62 5 10 ];
         %tmp.5 = 125.04;
@@ -241,8 +241,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_st
         %tmp.9 = sub %tmp.5 %tmp.8;
         lputv %omega.2 %tmp.9;
         symbol [ omega %omega.2 62 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 63 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 63 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop" ]
         %e.3 = local;
         symbol [ e %e.3 63 5 6 ];
         %tmp.10 = lgetv %e0.1;
@@ -263,16 +263,16 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_st
         %tmp.20 = add %tmp.10 %tmp.19;
         lputv %e.3 %tmp.20;
         symbol [ e %e.3 63 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 64 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 64 1 ]
         %tmp.21 = lgetv %e.3;
         symbol [ e %tmp.21 64 8 9 ];
         ret %tmp.21;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_60_1_65_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 67; @symbol_functiondef = [calcEccentricityEarthOrbit,67,10,36]; @symbol_param<0> = [t,67,37,38]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 67; @symbol_functiondef = [calcEccentricityEarthOrbit,67,10,36]; @symbol_param<0> = [t,67,37,38]; ]
     function calcEccentricityEarthOrbit(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_68_1_71_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 69 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_68_1_71_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 69 1 ]
         %tmp.1 = 0.016708634;
         %tmp.2 = lgetv %t;
         symbol [ t %tmp.2 69 23 24 ];
@@ -285,12 +285,12 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_68_1_71_1_st
         %tmp.8 = mul %tmp.2 %tmp.7;
         %tmp.9 = sub %tmp.1 %tmp.8;
         ret %tmp.9;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_68_1_71_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_68_1_71_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 73; @symbol_functiondef = [calcGeomMeanAnomalySun,73,10,32]; @symbol_param<0> = [t,73,33,34]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 73; @symbol_functiondef = [calcGeomMeanAnomalySun,73,10,32]; @symbol_param<0> = [t,73,33,34]; ]
     function calcGeomMeanAnomalySun(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_74_1_77_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 75 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_74_1_77_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 75 1 ]
         %tmp.1 = 357.52911;
         %tmp.2 = lgetv %t;
         symbol [ t %tmp.2 75 21 22 ];
@@ -303,13 +303,13 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_74_1_77_1_st
         %tmp.8 = mul %tmp.2 %tmp.7;
         %tmp.9 = add %tmp.1 %tmp.8;
         ret %tmp.9;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_74_1_77_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_74_1_77_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 78; @symbol_functiondef = [calcEquationOfTime,78,10,28]; @symbol_param<0> = [t,78,29,30]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 78; @symbol_functiondef = [calcEquationOfTime,78,10,28]; @symbol_param<0> = [t,78,29,30]; ]
     function calcEquationOfTime(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 80 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 80 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %epsilon.1 = local;
         symbol [ epsilon %epsilon.1 80 5 12 ];
         %tmp.1 = self;
@@ -320,8 +320,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %epsilon.1 %tmp.4;
         symbol [ epsilon %epsilon.1 80 5 12 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 81 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 81 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %l0.2 = local;
         symbol [ l0 %l0.2 81 5 7 ];
         %tmp.5 = self;
@@ -332,8 +332,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %l0.2 %tmp.8;
         symbol [ l0 %l0.2 81 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 82 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 82 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %e.3 = local;
         symbol [ e %e.3 82 5 6 ];
         %tmp.9 = self;
@@ -344,8 +344,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
         lputv %e.3 %tmp.12;
         symbol [ e %e.3 82 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 83 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 83 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %m.4 = local;
         symbol [ m %m.4 83 5 6 ];
         %tmp.13 = self;
@@ -356,8 +356,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         lputv %m.4 %tmp.16;
         symbol [ m %m.4 83 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 84 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 84 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %y.5 = local;
         symbol [ y %y.5 84 5 6 ];
         symbol [ Math %tmp.17 84 9 13 ];
@@ -375,7 +375,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.25 = invoke %tmp.17 %tmp.18(%tmp.24);
         lputv %y.5 %tmp.25;
         symbol [ y %y.5 84 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 86 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 86 1 ]
         %tmp.26 = lgetv %y.5;
         symbol [ y %tmp.26 86 1 2 ];
         %tmp.27 = lgetv %y.5;
@@ -383,8 +383,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.28 = mul %tmp.26 %tmp.27;
         lputv %y.5 %tmp.28;
         symbol [ y %y.5 86 1 2 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 88 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 88 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %sin2l0.6 = local;
         symbol [ sin2l0 %sin2l0.6 88 5 11 ];
         symbol [ Math %tmp.29 88 14 18 ];
@@ -402,8 +402,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.37 = invoke %tmp.29 %tmp.30(%tmp.36);
         lputv %sin2l0.6 %tmp.37;
         symbol [ sin2l0 %sin2l0.6 88 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 89 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 89 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %sinm.7 = local;
         symbol [ sinm %sinm.7 89 5 9 ];
         symbol [ Math %tmp.38 89 14 18 ];
@@ -419,8 +419,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.43);
         lputv %sinm.7 %tmp.44;
         symbol [ sinm %sinm.7 89 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 90 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 90 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %cos2l0.8 = local;
         symbol [ cos2l0 %cos2l0.8 90 5 11 ];
         symbol [ Math %tmp.45 90 14 18 ];
@@ -438,8 +438,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.53 = invoke %tmp.45 %tmp.46(%tmp.52);
         lputv %cos2l0.8 %tmp.53;
         symbol [ cos2l0 %cos2l0.8 90 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 91 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 91 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %sin4l0.9 = local;
         symbol [ sin4l0 %sin4l0.9 91 5 11 ];
         symbol [ Math %tmp.54 91 14 18 ];
@@ -457,8 +457,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.62 = invoke %tmp.54 %tmp.55(%tmp.61);
         lputv %sin4l0.9 %tmp.62;
         symbol [ sin4l0 %sin4l0.9 91 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 92 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 92 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %sin2m.10 = local;
         symbol [ sin2m %sin2m.10 92 5 10 ];
         symbol [ Math %tmp.63 92 14 18 ];
@@ -476,8 +476,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.71 = invoke %tmp.63 %tmp.64(%tmp.70);
         lputv %sin2m.10 %tmp.71;
         symbol [ sin2m %sin2m.10 92 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 93 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 93 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop" ]
         %Etime.11 = local;
         symbol [ Etime %Etime.11 93 5 10 ];
         %tmp.72 = lgetv %y.5;
@@ -531,7 +531,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.106 = sub %tmp.98 %tmp.105;
         lputv %Etime.11 %tmp.106;
         symbol [ Etime %Etime.11 93 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 94 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 94 1 ]
         %tmp.107 = self;
         symbol [ radToDeg %tmp.108 94 8 16 ];
         %tmp.108 = getv function %tmp.107 :radToDeg;
@@ -541,12 +541,12 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_st
         %tmp.111 = 4.0;
         %tmp.112 = mul %tmp.110 %tmp.111;
         ret %tmp.112;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_79_1_95_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 97; @symbol_functiondef = [calcTimeJulianCent,97,10,28]; @symbol_param<0> = [jd,97,29,31]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 97; @symbol_functiondef = [calcTimeJulianCent,97,10,28]; @symbol_param<0> = [jd,97,29,31]; ]
     function calcTimeJulianCent(jd) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_98_1_101_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 99 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_98_1_101_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 99 1 ]
         %tmp.1 = lgetv %jd;
         symbol [ jd %tmp.1 99 11 13 ];
         %tmp.2 = 2451545.0;
@@ -554,13 +554,13 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_98_1_101_1_s
         %tmp.4 = 36525.0;
         %tmp.5 = div %tmp.3 %tmp.4;
         ret %tmp.5;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_98_1_101_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_98_1_101_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 103; @symbol_functiondef = [calcSunTrueLong,103,10,25]; @symbol_param<0> = [t,103,26,27]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 103; @symbol_functiondef = [calcSunTrueLong,103,10,25]; @symbol_param<0> = [t,103,26,27]; ]
     function calcSunTrueLong(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 105 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 105 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
         %l0.1 = local;
         symbol [ l0 %l0.1 105 5 7 ];
         %tmp.1 = self;
@@ -571,8 +571,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %l0.1 %tmp.4;
         symbol [ l0 %l0.1 105 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 106 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 106 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
         %c.2 = local;
         symbol [ c %c.2 106 5 6 ];
         %tmp.5 = self;
@@ -583,8 +583,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %c.2 %tmp.8;
         symbol [ c %c.2 106 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 107 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 107 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop" ]
         %O.3 = local;
         symbol [ O %O.3 107 5 6 ];
         %tmp.9 = lgetv %l0.1;
@@ -594,17 +594,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_
         %tmp.11 = add %tmp.9 %tmp.10;
         lputv %O.3 %tmp.11;
         symbol [ O %O.3 107 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 108 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 108 1 ]
         %tmp.12 = lgetv %O.3;
         symbol [ O %tmp.12 108 8 9 ];
         ret %tmp.12;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_104_1_109_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 111; @symbol_functiondef = [calcSunApparentLong,111,10,29]; @symbol_param<0> = [t,111,30,31]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 111; @symbol_functiondef = [calcSunApparentLong,111,10,29]; @symbol_param<0> = [t,111,30,31]; ]
     function calcSunApparentLong(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 113 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 113 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
         %o.1 = local;
         symbol [ o %o.1 113 5 6 ];
         %tmp.1 = self;
@@ -615,8 +615,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %o.1 %tmp.4;
         symbol [ o %o.1 113 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 114 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 114 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
         %omega.2 = local;
         symbol [ omega %omega.2 114 5 10 ];
         %tmp.5 = 125.04;
@@ -627,8 +627,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_
         %tmp.9 = sub %tmp.5 %tmp.8;
         lputv %omega.2 %tmp.9;
         symbol [ omega %omega.2 114 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 115 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 115 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop" ]
         %lambda.3 = local;
         symbol [ lambda %lambda.3 115 5 11 ];
         %tmp.10 = lgetv %o.1;
@@ -651,17 +651,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_
         %tmp.22 = sub %tmp.12 %tmp.21;
         lputv %lambda.3 %tmp.22;
         symbol [ lambda %lambda.3 115 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 116 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 116 1 ]
         %tmp.23 = lgetv %lambda.3;
         symbol [ lambda %tmp.23 116 8 14 ];
         ret %tmp.23;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_112_1_117_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 119; @symbol_functiondef = [calcSunDeclination,119,10,28]; @symbol_param<0> = [t,119,29,30]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 119; @symbol_functiondef = [calcSunDeclination,119,10,28]; @symbol_param<0> = [t,119,29,30]; ]
     function calcSunDeclination(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 121 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 121 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
         %e.1 = local;
         symbol [ e %e.1 121 5 6 ];
         %tmp.1 = self;
@@ -672,8 +672,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %e.1 %tmp.4;
         symbol [ e %e.1 121 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 122 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 122 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
         %lambda.2 = local;
         symbol [ lambda %lambda.2 122 5 11 ];
         %tmp.5 = self;
@@ -684,8 +684,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %lambda.2 %tmp.8;
         symbol [ lambda %lambda.2 122 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 123 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 123 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
         %sint.3 = local;
         symbol [ sint %sint.3 123 5 9 ];
         symbol [ Math %tmp.9 123 12 16 ];
@@ -713,8 +713,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_
         %tmp.23 = mul %tmp.15 %tmp.22;
         lputv %sint.3 %tmp.23;
         symbol [ sint %sint.3 123 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 124 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 124 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop" ]
         %theta.4 = local;
         symbol [ theta %theta.4 124 5 10 ];
         %tmp.24 = self;
@@ -730,17 +730,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_
         %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.29);
         lputv %theta.4 %tmp.30;
         symbol [ theta %theta.4 124 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 125 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 125 1 ]
         %tmp.31 = lgetv %theta.4;
         symbol [ theta %tmp.31 125 8 13 ];
         ret %tmp.31;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_120_1_126_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 128; @symbol_functiondef = [calcHourAngleSunrise,128,10,30]; @symbol_param<0> = [lat,128,31,34]; @symbol_param<1> = [solarDec,128,36,44]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 128; @symbol_functiondef = [calcHourAngleSunrise,128,10,30]; @symbol_param<0> = [lat,128,31,34]; @symbol_param<1> = [solarDec,128,36,44]; ]
     function calcHourAngleSunrise(lat, solarDec) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 130 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 130 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %latRad.1 = local;
         symbol [ latRad %latRad.1 130 5 11 ];
         %tmp.1 = self;
@@ -751,8 +751,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %latRad.1 %tmp.4;
         symbol [ latRad %latRad.1 130 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 131 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 131 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %sdRad.2 = local;
         symbol [ sdRad %sdRad.2 131 5 10 ];
         %tmp.5 = self;
@@ -763,8 +763,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %sdRad.2 %tmp.8;
         symbol [ sdRad %sdRad.2 131 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 133 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 133 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %cosLat.3 = local;
         symbol [ cosLat %cosLat.3 133 5 11 ];
         symbol [ Math %tmp.9 133 14 18 ];
@@ -776,8 +776,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
         lputv %cosLat.3 %tmp.12;
         symbol [ cosLat %cosLat.3 133 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 134 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 134 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %cosDec.4 = local;
         symbol [ cosDec %cosDec.4 134 5 11 ];
         symbol [ Math %tmp.13 134 14 18 ];
@@ -789,33 +789,33 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         lputv %cosDec.4 %tmp.16;
         symbol [ cosDec %cosDec.4 134 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 135 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_stmt:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_5_135_30_begin:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 135 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_5_135_30_begin:
         %tmp.17 = lgetv %cosLat.3;
         symbol [ cosLat %tmp.17 135 5 11 ];
         %tmp.18 = 0;
         %tmp.19 = eq %tmp.17 %tmp.18;
-        bt %tmp.19 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_true;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_false:
+        bt %tmp.19 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_true;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_false:
         %tmp.20 = lgetv %cosDec.4;
         symbol [ cosDec %tmp.20 135 20 26 ];
         %tmp.21 = 0;
         %tmp.22 = eq %tmp.20 %tmp.21;
         push %tmp.22;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_end:
-        %tmp.23 = phi [%tmp.19 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_5_135_30_begin] [%tmp.22 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_false] [%tmp.23 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_end];
-        bf %tmp.23 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_33_135_45_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 135 35 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_end:
+        %tmp.23 = phi [%tmp.19 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_5_135_30_begin] [%tmp.22 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_false] [%tmp.23 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_20_135_30_end];
+        bf %tmp.23 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_33_135_45_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 135 35 ]
         %tmp.24 = 0;
         ret %tmp.24;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_33_135_45_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 140 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_33_135_45_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_135_1_135_45_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 140 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %cosHA.5 = local;
         symbol [ cosHA %cosHA.5 140 5 10 ];
         symbol [ Math %tmp.25 140 13 17 ];
@@ -852,40 +852,40 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_135_1_135_45
         %tmp.45 = sub %tmp.35 %tmp.44;
         lputv %cosHA.5 %tmp.45;
         symbol [ cosHA %cosHA.5 140 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 143 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_stmt:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 143 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_stmt:
         %tmp.46 = lgetv %cosHA.5;
         symbol [ cosHA %tmp.46 143 5 10 ];
         %tmp.47 = -1;
         %tmp.48 = lt %tmp.46 %tmp.47;
-        bf %tmp.48 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_17_143_31_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 143 19 ]
+        bf %tmp.48 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_17_143_31_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 143 19 ]
         %tmp.49 = -1;
         lputv %cosHA.5 %tmp.49;
         symbol [ cosHA %cosHA.5 143 19 24 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_17_143_31_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 144 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_17_143_31_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_143_1_143_31_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 144 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_stmt:
         %tmp.50 = lgetv %cosHA.5;
         symbol [ cosHA %tmp.50 144 5 10 ];
         %tmp.51 = 1;
         %tmp.52 = gt %tmp.50 %tmp.51;
-        bf %tmp.52 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_16_144_29_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 144 18 ]
+        bf %tmp.52 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_16_144_29_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 144 18 ]
         %tmp.53 = 1;
         lputv %cosHA.5 %tmp.53;
         symbol [ cosHA %cosHA.5 144 18 23 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_16_144_29_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 145 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_16_144_29_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_144_1_144_29_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 145 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop" ]
         %HA.6 = local;
         symbol [ HA %HA.6 145 5 7 ];
         symbol [ Math %tmp.54 145 10 14 ];
@@ -897,17 +897,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_144_1_144_29
         %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
         lputv %HA.6 %tmp.57;
         symbol [ HA %HA.6 145 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 146 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 146 1 ]
         %tmp.58 = lgetv %HA.6;
         symbol [ HA %tmp.58 146 8 10 ];
         ret %tmp.58;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_129_1_147_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 149; @symbol_functiondef = [calcHourAngleSunset,149,10,29]; @symbol_param<0> = [lat,149,30,33]; @symbol_param<1> = [solarDec,149,35,43]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 149; @symbol_functiondef = [calcHourAngleSunset,149,10,29]; @symbol_param<0> = [lat,149,30,33]; @symbol_param<1> = [solarDec,149,35,43]; ]
     function calcHourAngleSunset(lat, solarDec) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 151 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 151 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %latRad.1 = local;
         symbol [ latRad %latRad.1 151 5 11 ];
         %tmp.1 = self;
@@ -918,8 +918,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %latRad.1 %tmp.4;
         symbol [ latRad %latRad.1 151 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 152 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 152 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %sdRad.2 = local;
         symbol [ sdRad %sdRad.2 152 5 10 ];
         %tmp.5 = self;
@@ -930,8 +930,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %sdRad.2 %tmp.8;
         symbol [ sdRad %sdRad.2 152 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 154 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 154 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %cosLat.3 = local;
         symbol [ cosLat %cosLat.3 154 5 11 ];
         symbol [ Math %tmp.9 154 14 18 ];
@@ -943,8 +943,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
         lputv %cosLat.3 %tmp.12;
         symbol [ cosLat %cosLat.3 154 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 155 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 155 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %cosDec.4 = local;
         symbol [ cosDec %cosDec.4 155 5 11 ];
         symbol [ Math %tmp.13 155 14 18 ];
@@ -956,33 +956,33 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         lputv %cosDec.4 %tmp.16;
         symbol [ cosDec %cosDec.4 155 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 156 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_stmt:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_5_156_30_begin:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 156 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_5_156_30_begin:
         %tmp.17 = lgetv %cosLat.3;
         symbol [ cosLat %tmp.17 156 5 11 ];
         %tmp.18 = 0;
         %tmp.19 = eq %tmp.17 %tmp.18;
-        bt %tmp.19 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_true;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_false:
+        bt %tmp.19 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_true;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_false:
         %tmp.20 = lgetv %cosDec.4;
         symbol [ cosDec %tmp.20 156 20 26 ];
         %tmp.21 = 0;
         %tmp.22 = eq %tmp.20 %tmp.21;
         push %tmp.22;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_end:
-        %tmp.23 = phi [%tmp.19 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_5_156_30_begin] [%tmp.22 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_false] [%tmp.23 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_end];
-        bf %tmp.23 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_33_156_45_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 156 35 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_end:
+        %tmp.23 = phi [%tmp.19 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_5_156_30_begin] [%tmp.22 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_false] [%tmp.23 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_20_156_30_end];
+        bf %tmp.23 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_33_156_45_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 156 35 ]
         %tmp.24 = 0;
         ret %tmp.24;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_33_156_45_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 161 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_33_156_45_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_156_1_156_45_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 161 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %cosHA.5 = local;
         symbol [ cosHA %cosHA.5 161 5 10 ];
         symbol [ Math %tmp.25 161 13 17 ];
@@ -1019,40 +1019,40 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_156_1_156_45
         %tmp.45 = sub %tmp.35 %tmp.44;
         lputv %cosHA.5 %tmp.45;
         symbol [ cosHA %cosHA.5 161 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 164 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_stmt:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 164 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_stmt:
         %tmp.46 = lgetv %cosHA.5;
         symbol [ cosHA %tmp.46 164 5 10 ];
         %tmp.47 = -1;
         %tmp.48 = lt %tmp.46 %tmp.47;
-        bf %tmp.48 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_17_164_31_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 164 19 ]
+        bf %tmp.48 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_17_164_31_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 164 19 ]
         %tmp.49 = -1;
         lputv %cosHA.5 %tmp.49;
         symbol [ cosHA %cosHA.5 164 19 24 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_17_164_31_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 165 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_17_164_31_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_164_1_164_31_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 165 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_stmt:
         %tmp.50 = lgetv %cosHA.5;
         symbol [ cosHA %tmp.50 165 5 10 ];
         %tmp.51 = 1;
         %tmp.52 = gt %tmp.50 %tmp.51;
-        bf %tmp.52 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_16_165_29_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 165 18 ]
+        bf %tmp.52 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_16_165_29_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 165 18 ]
         %tmp.53 = 1;
         lputv %cosHA.5 %tmp.53;
         symbol [ cosHA %cosHA.5 165 18 23 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_16_165_29_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 166 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_16_165_29_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_165_1_165_29_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 166 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop" ]
         %HA.6 = local;
         symbol [ HA %HA.6 166 5 7 ];
         symbol [ Math %tmp.54 166 10 14 ];
@@ -1064,44 +1064,44 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_165_1_165_29
         %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
         lputv %HA.6 %tmp.57;
         symbol [ HA %HA.6 166 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 167 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 167 1 ]
         %tmp.58 = lgetv %HA.6;
         symbol [ HA %tmp.58 167 9 11 ];
         %tmp.59 = sub 0 %tmp.58;
         ret %tmp.59;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_150_1_168_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 170; @symbol_functiondef = [calcJD,170,10,16]; @symbol_param<0> = [y,170,17,18]; @symbol_param<1> = [m,170,20,21]; @symbol_param<2> = [d,170,23,24]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 170; @symbol_functiondef = [calcJD,170,10,16]; @symbol_param<0> = [y,170,17,18]; @symbol_param<1> = [m,170,20,21]; @symbol_param<2> = [d,170,23,24]; ]
     function calcJD(y, m, d) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 172 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 172 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_stmt:
         %tmp.1 = lgetv %m;
         symbol [ m %tmp.1 172 5 6 ];
         %tmp.2 = 2;
         %tmp.3 = lte %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_13_175_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 173 2 ]
+        bf %tmp.3 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_13_175_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 173 2 ]
         %tmp.4 = lgetv %y;
         symbol [ y %tmp.4 173 2 3 ];
         %tmp.5 = 1;
         %tmp.6 = sub %tmp.4 %tmp.5;
         lputv %y %tmp.6;
         symbol [ y %y 173 2 3 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 174 2 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 174 2 ]
         %tmp.7 = lgetv %m;
         symbol [ m %tmp.7 174 2 3 ];
         %tmp.8 = 12;
         %tmp.9 = add %tmp.7 %tmp.8;
         lputv %m %tmp.9;
         symbol [ m %m 174 2 3 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_13_175_1_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 176 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_13_175_1_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 176 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
         %A.1 = local;
         symbol [ A %A.1 176 5 6 ];
         symbol [ Math %tmp.10 176 9 13 ];
@@ -1115,8 +1115,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_
         %tmp.15 = invoke %tmp.10 %tmp.11(%tmp.14);
         lputv %A.1 %tmp.15;
         symbol [ A %A.1 176 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 177 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 177 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
         %B.2 = local;
         symbol [ B %B.2 177 5 6 ];
         %tmp.16 = 2;
@@ -1135,8 +1135,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_
         %tmp.25 = add %tmp.18 %tmp.24;
         lputv %B.2 %tmp.25;
         symbol [ B %B.2 177 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 178 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 178 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop" ]
         %JD.3 = local;
         symbol [ JD %JD.3 178 5 7 ];
         symbol [ Math %tmp.26 178 10 14 ];
@@ -1172,16 +1172,16 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_172_1_175_1_
         %tmp.48 = sub %tmp.46 %tmp.47;
         lputv %JD.3 %tmp.48;
         symbol [ JD %JD.3 178 5 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 179 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 179 1 ]
         %tmp.49 = lgetv %JD.3;
         symbol [ JD %tmp.49 179 8 10 ];
         ret %tmp.49;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_171_1_180_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 182; @symbol_functiondef = [calcJDFromJulianCent,182,10,30]; @symbol_param<0> = [t,182,31,32]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 182; @symbol_functiondef = [calcJDFromJulianCent,182,10,30]; @symbol_param<0> = [t,182,31,32]; ]
     function calcJDFromJulianCent(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_183_1_186_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 184 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_183_1_186_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 184 1 ]
         %tmp.1 = lgetv %t;
         symbol [ t %tmp.1 184 9 10 ];
         %tmp.2 = 36525.0;
@@ -1189,13 +1189,13 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_183_1_186_1_
         %tmp.4 = 2451545.0;
         %tmp.5 = add %tmp.3 %tmp.4;
         ret %tmp.5;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_183_1_186_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_183_1_186_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 188; @symbol_functiondef = [calcSunEqOfCenter,188,10,27]; @symbol_param<0> = [t,188,28,29]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 188; @symbol_functiondef = [calcSunEqOfCenter,188,10,27]; @symbol_param<0> = [t,188,28,29]; ]
     function calcSunEqOfCenter(t) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 190 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 190 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %m.1 = local;
         symbol [ m %m.1 190 5 6 ];
         %tmp.1 = self;
@@ -1206,8 +1206,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %m.1 %tmp.4;
         symbol [ m %m.1 190 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 191 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 191 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %mrad.2 = local;
         symbol [ mrad %mrad.2 191 5 9 ];
         %tmp.5 = self;
@@ -1218,8 +1218,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         lputv %mrad.2 %tmp.8;
         symbol [ mrad %mrad.2 191 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 192 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 192 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %sinm.3 = local;
         symbol [ sinm %sinm.3 192 5 9 ];
         symbol [ Math %tmp.9 192 12 16 ];
@@ -1231,8 +1231,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
         lputv %sinm.3 %tmp.12;
         symbol [ sinm %sinm.3 192 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 193 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 193 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %sin2m.4 = local;
         symbol [ sin2m %sin2m.4 193 5 10 ];
         symbol [ Math %tmp.13 193 13 17 ];
@@ -1247,8 +1247,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.17);
         lputv %sin2m.4 %tmp.18;
         symbol [ sin2m %sin2m.4 193 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 194 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 194 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %sin3m.5 = local;
         symbol [ sin3m %sin3m.5 194 5 10 ];
         symbol [ Math %tmp.19 194 13 17 ];
@@ -1266,8 +1266,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.26 = invoke %tmp.19 %tmp.20(%tmp.25);
         lputv %sin3m.5 %tmp.26;
         symbol [ sin3m %sin3m.5 194 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 195 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 195 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop" ]
         %C.6 = local;
         symbol [ C %C.6 195 5 6 ];
         %tmp.27 = lgetv %sinm.3;
@@ -1301,17 +1301,17 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_
         %tmp.49 = add %tmp.45 %tmp.48;
         lputv %C.6 %tmp.49;
         symbol [ C %C.6 195 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 196 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 196 1 ]
         %tmp.50 = lgetv %C.6;
         symbol [ C %tmp.50 196 8 9 ];
         ret %tmp.50;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_189_1_197_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 199; @symbol_functiondef = [calcSunrise,199,10,21]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 199; @symbol_functiondef = [calcSunrise,199,10,21]; ]
     function calcSunrise() {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 201 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 201 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %t.1 = local;
         symbol [ t %t.1 201 5 6 ];
         %tmp.1 = self;
@@ -1322,8 +1322,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
         lputv %t.1 %tmp.5;
         symbol [ t %t.1 201 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 203 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 203 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %eqTime.2 = local;
         symbol [ eqTime %eqTime.2 203 5 11 ];
         %tmp.6 = self;
@@ -1334,8 +1334,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         lputv %eqTime.2 %tmp.9;
         symbol [ eqTime %eqTime.2 203 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 204 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 204 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %solarDec.3 = local;
         symbol [ solarDec %solarDec.3 204 5 13 ];
         %tmp.10 = self;
@@ -1346,8 +1346,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
         lputv %solarDec.3 %tmp.13;
         symbol [ solarDec %solarDec.3 204 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 205 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 205 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %hourAngle.4 = local;
         symbol [ hourAngle %hourAngle.4 205 5 14 ];
         %tmp.14 = self;
@@ -1360,8 +1360,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.19 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.18);
         lputv %hourAngle.4 %tmp.19;
         symbol [ hourAngle %hourAngle.4 205 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 206 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 206 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %delta.5 = local;
         symbol [ delta %delta.5 206 5 10 ];
         symbol [ longitude %tmp.21 206 13 22 ];
@@ -1375,8 +1375,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.26 = sub %tmp.21 %tmp.25;
         lputv %delta.5 %tmp.26;
         symbol [ delta %delta.5 206 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 207 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 207 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %timeDiff.6 = local;
         symbol [ timeDiff %timeDiff.6 207 5 13 ];
         %tmp.27 = 4;
@@ -1385,8 +1385,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.29 = mul %tmp.27 %tmp.28;
         lputv %timeDiff.6 %tmp.29;
         symbol [ timeDiff %timeDiff.6 207 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 208 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 208 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %timeUTC.7 = local;
         symbol [ timeUTC %timeUTC.7 208 5 12 ];
         %tmp.30 = 720;
@@ -1398,8 +1398,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.34 = sub %tmp.32 %tmp.33;
         lputv %timeUTC.7 %tmp.34;
         symbol [ timeUTC %timeUTC.7 208 5 12 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 209 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 209 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %newt.8 = local;
         symbol [ newt %newt.8 209 5 9 ];
         %tmp.35 = self;
@@ -1419,7 +1419,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.45 = invoke %tmp.35 %tmp.36(%tmp.44);
         lputv %newt.8 %tmp.45;
         symbol [ newt %newt.8 209 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 211 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 211 1 ]
         %tmp.46 = self;
         symbol [ calcEquationOfTime %tmp.47 211 10 28 ];
         %tmp.47 = getv function %tmp.46 :calcEquationOfTime;
@@ -1428,7 +1428,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
         lputv %eqTime.2 %tmp.49;
         symbol [ eqTime %eqTime.2 211 1 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 212 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 212 1 ]
         %tmp.50 = self;
         symbol [ calcSunDeclination %tmp.51 212 12 30 ];
         %tmp.51 = getv function %tmp.50 :calcSunDeclination;
@@ -1437,7 +1437,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
         lputv %solarDec.3 %tmp.53;
         symbol [ solarDec %solarDec.3 212 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 213 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 213 1 ]
         %tmp.54 = self;
         symbol [ calcHourAngleSunrise %tmp.55 213 13 33 ];
         %tmp.55 = getv function %tmp.54 :calcHourAngleSunrise;
@@ -1448,7 +1448,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.59 = invoke %tmp.54 %tmp.55(%tmp.57, %tmp.58);
         lputv %hourAngle.4 %tmp.59;
         symbol [ hourAngle %hourAngle.4 213 1 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 214 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 214 1 ]
         symbol [ longitude %tmp.61 214 9 18 ];
         %tmp.61 = getv ? :longitude;
         %tmp.62 = self;
@@ -1460,14 +1460,14 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.66 = sub %tmp.61 %tmp.65;
         lputv %delta.5 %tmp.66;
         symbol [ delta %delta.5 214 1 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 215 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 215 1 ]
         %tmp.67 = 4;
         %tmp.68 = lgetv %delta.5;
         symbol [ delta %tmp.68 215 16 21 ];
         %tmp.69 = mul %tmp.67 %tmp.68;
         lputv %timeDiff.6 %tmp.69;
         symbol [ timeDiff %timeDiff.6 215 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 216 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 216 1 ]
         %tmp.70 = 720;
         %tmp.71 = lgetv %timeDiff.6;
         symbol [ timeDiff %tmp.71 216 17 25 ];
@@ -1477,8 +1477,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.74 = sub %tmp.72 %tmp.73;
         lputv %timeUTC.7 %tmp.74;
         symbol [ timeUTC %timeUTC.7 216 1 8 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 217 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 217 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop" ]
         %localTime.9 = local;
         symbol [ localTime %localTime.9 217 5 14 ];
         %tmp.75 = lgetv %timeUTC.7;
@@ -1490,55 +1490,55 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_
         %tmp.80 = add %tmp.75 %tmp.79;
         lputv %localTime.9 %tmp.80;
         symbol [ localTime %localTime.9 217 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 218 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_stmt:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 218 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_stmt:
         %tmp.81 = lgetv %localTime.9;
         symbol [ localTime %tmp.81 218 5 14 ];
         %tmp.82 = 1440;
         %tmp.83 = gt %tmp.81 %tmp.82;
-        bf %tmp.83 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_21_218_47_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 218 22 ]
+        bf %tmp.83 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_21_218_47_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 218 22 ]
         %tmp.84 = lgetv %localTime.9;
         symbol [ localTime %tmp.84 218 32 41 ];
         %tmp.85 = 1440;
         %tmp.86 = sub %tmp.84 %tmp.85;
         lputv %localTime.9 %tmp.86;
         symbol [ localTime %localTime.9 218 22 31 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_21_218_47_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 219 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_21_218_47_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_218_1_218_47_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 219 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_stmt:
         %tmp.87 = lgetv %localTime.9;
         symbol [ localTime %tmp.87 219 5 14 ];
         %tmp.88 = 0;
         %tmp.89 = lt %tmp.87 %tmp.88;
-        bf %tmp.89 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_18_219_44_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 219 19 ]
+        bf %tmp.89 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_18_219_44_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 219 19 ]
         %tmp.90 = lgetv %localTime.9;
         symbol [ localTime %tmp.90 219 29 38 ];
         %tmp.91 = 1440;
         %tmp.92 = add %tmp.90 %tmp.91;
         lputv %localTime.9 %tmp.92;
         symbol [ localTime %localTime.9 219 19 28 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_18_219_44_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 220 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_18_219_44_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_219_1_219_44_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 220 1 ]
         %tmp.93 = lgetv %localTime.9;
         symbol [ localTime %tmp.93 220 8 17 ];
         ret %tmp.93;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_200_1_221_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 223; @symbol_functiondef = [calcSunriseTomorrow,223,10,29]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 223; @symbol_functiondef = [calcSunriseTomorrow,223,10,29]; ]
     function calcSunriseTomorrow() {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 225 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 225 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %t.1 = local;
         symbol [ t %t.1 225 5 6 ];
         %tmp.1 = self;
@@ -1551,8 +1551,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         lputv %t.1 %tmp.7;
         symbol [ t %t.1 225 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 227 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 227 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %eqTime.2 = local;
         symbol [ eqTime %eqTime.2 227 5 11 ];
         %tmp.8 = self;
@@ -1563,8 +1563,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
         lputv %eqTime.2 %tmp.11;
         symbol [ eqTime %eqTime.2 227 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 228 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 228 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %solarDec.3 = local;
         symbol [ solarDec %solarDec.3 228 5 13 ];
         %tmp.12 = self;
@@ -1575,8 +1575,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
         lputv %solarDec.3 %tmp.15;
         symbol [ solarDec %solarDec.3 228 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 229 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 229 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %hourAngle.4 = local;
         symbol [ hourAngle %hourAngle.4 229 5 14 ];
         %tmp.16 = self;
@@ -1589,8 +1589,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.21 = invoke %tmp.16 %tmp.17(%tmp.19, %tmp.20);
         lputv %hourAngle.4 %tmp.21;
         symbol [ hourAngle %hourAngle.4 229 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 230 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 230 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %delta.5 = local;
         symbol [ delta %delta.5 230 5 10 ];
         symbol [ longitude %tmp.23 230 13 22 ];
@@ -1604,8 +1604,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.28 = sub %tmp.23 %tmp.27;
         lputv %delta.5 %tmp.28;
         symbol [ delta %delta.5 230 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 231 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 231 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %timeDiff.6 = local;
         symbol [ timeDiff %timeDiff.6 231 5 13 ];
         %tmp.29 = 4;
@@ -1614,8 +1614,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.31 = mul %tmp.29 %tmp.30;
         lputv %timeDiff.6 %tmp.31;
         symbol [ timeDiff %timeDiff.6 231 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 232 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 232 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %timeUTC.7 = local;
         symbol [ timeUTC %timeUTC.7 232 5 12 ];
         %tmp.32 = 720;
@@ -1627,8 +1627,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.36 = sub %tmp.34 %tmp.35;
         lputv %timeUTC.7 %tmp.36;
         symbol [ timeUTC %timeUTC.7 232 5 12 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 233 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 233 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %newt.8 = local;
         symbol [ newt %newt.8 233 5 9 ];
         %tmp.37 = self;
@@ -1648,7 +1648,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.47 = invoke %tmp.37 %tmp.38(%tmp.46);
         lputv %newt.8 %tmp.47;
         symbol [ newt %newt.8 233 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 235 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 235 1 ]
         %tmp.48 = self;
         symbol [ calcEquationOfTime %tmp.49 235 10 28 ];
         %tmp.49 = getv function %tmp.48 :calcEquationOfTime;
@@ -1657,7 +1657,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.51 = invoke %tmp.48 %tmp.49(%tmp.50);
         lputv %eqTime.2 %tmp.51;
         symbol [ eqTime %eqTime.2 235 1 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 236 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 236 1 ]
         %tmp.52 = self;
         symbol [ calcSunDeclination %tmp.53 236 12 30 ];
         %tmp.53 = getv function %tmp.52 :calcSunDeclination;
@@ -1666,7 +1666,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
         lputv %solarDec.3 %tmp.55;
         symbol [ solarDec %solarDec.3 236 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 237 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 237 1 ]
         %tmp.56 = self;
         symbol [ calcHourAngleSunrise %tmp.57 237 13 33 ];
         %tmp.57 = getv function %tmp.56 :calcHourAngleSunrise;
@@ -1677,7 +1677,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.61 = invoke %tmp.56 %tmp.57(%tmp.59, %tmp.60);
         lputv %hourAngle.4 %tmp.61;
         symbol [ hourAngle %hourAngle.4 237 1 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 238 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 238 1 ]
         symbol [ longitude %tmp.63 238 9 18 ];
         %tmp.63 = getv ? :longitude;
         %tmp.64 = self;
@@ -1689,14 +1689,14 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.68 = sub %tmp.63 %tmp.67;
         lputv %delta.5 %tmp.68;
         symbol [ delta %delta.5 238 1 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 239 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 239 1 ]
         %tmp.69 = 4;
         %tmp.70 = lgetv %delta.5;
         symbol [ delta %tmp.70 239 16 21 ];
         %tmp.71 = mul %tmp.69 %tmp.70;
         lputv %timeDiff.6 %tmp.71;
         symbol [ timeDiff %timeDiff.6 239 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 240 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 240 1 ]
         %tmp.72 = 720;
         %tmp.73 = lgetv %timeDiff.6;
         symbol [ timeDiff %tmp.73 240 17 25 ];
@@ -1706,8 +1706,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.76 = sub %tmp.74 %tmp.75;
         lputv %timeUTC.7 %tmp.76;
         symbol [ timeUTC %timeUTC.7 240 1 8 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 241 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 241 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop" ]
         %localTime.9 = local;
         symbol [ localTime %localTime.9 241 5 14 ];
         %tmp.77 = lgetv %timeUTC.7;
@@ -1719,55 +1719,55 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_
         %tmp.82 = add %tmp.77 %tmp.81;
         lputv %localTime.9 %tmp.82;
         symbol [ localTime %localTime.9 241 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 242 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_stmt:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 242 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_stmt:
         %tmp.83 = lgetv %localTime.9;
         symbol [ localTime %tmp.83 242 5 14 ];
         %tmp.84 = 1440;
         %tmp.85 = gt %tmp.83 %tmp.84;
-        bf %tmp.85 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_21_242_47_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 242 22 ]
+        bf %tmp.85 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_21_242_47_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 242 22 ]
         %tmp.86 = lgetv %localTime.9;
         symbol [ localTime %tmp.86 242 32 41 ];
         %tmp.87 = 1440;
         %tmp.88 = sub %tmp.86 %tmp.87;
         lputv %localTime.9 %tmp.88;
         symbol [ localTime %localTime.9 242 22 31 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_21_242_47_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 243 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_21_242_47_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_242_1_242_47_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 243 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_stmt:
         %tmp.89 = lgetv %localTime.9;
         symbol [ localTime %tmp.89 243 5 14 ];
         %tmp.90 = 0;
         %tmp.91 = lt %tmp.89 %tmp.90;
-        bf %tmp.91 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_18_243_44_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 243 19 ]
+        bf %tmp.91 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_18_243_44_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 243 19 ]
         %tmp.92 = lgetv %localTime.9;
         symbol [ localTime %tmp.92 243 29 38 ];
         %tmp.93 = 1440;
         %tmp.94 = add %tmp.92 %tmp.93;
         lputv %localTime.9 %tmp.94;
         symbol [ localTime %localTime.9 243 19 28 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_18_243_44_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 244 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_18_243_44_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_243_1_243_44_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 244 1 ]
         %tmp.95 = lgetv %localTime.9;
         symbol [ localTime %tmp.95 244 8 17 ];
         ret %tmp.95;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_224_1_245_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 247; @symbol_functiondef = [calcSunset,247,10,20]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 247; @symbol_functiondef = [calcSunset,247,10,20]; ]
     function calcSunset() {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 249 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 249 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %t.1 = local;
         symbol [ t %t.1 249 5 6 ];
         %tmp.1 = self;
@@ -1778,8 +1778,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
         lputv %t.1 %tmp.5;
         symbol [ t %t.1 249 5 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 251 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 251 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %eqTime.2 = local;
         symbol [ eqTime %eqTime.2 251 5 11 ];
         %tmp.6 = self;
@@ -1790,8 +1790,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         lputv %eqTime.2 %tmp.9;
         symbol [ eqTime %eqTime.2 251 5 11 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 252 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 252 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %solarDec.3 = local;
         symbol [ solarDec %solarDec.3 252 5 13 ];
         %tmp.10 = self;
@@ -1802,8 +1802,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
         lputv %solarDec.3 %tmp.13;
         symbol [ solarDec %solarDec.3 252 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 253 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 253 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %hourAngle.4 = local;
         symbol [ hourAngle %hourAngle.4 253 5 14 ];
         %tmp.14 = self;
@@ -1816,8 +1816,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.19 = invoke %tmp.14 %tmp.15(%tmp.17, %tmp.18);
         lputv %hourAngle.4 %tmp.19;
         symbol [ hourAngle %hourAngle.4 253 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 254 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 254 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %delta.5 = local;
         symbol [ delta %delta.5 254 5 10 ];
         symbol [ longitude %tmp.21 254 13 22 ];
@@ -1831,8 +1831,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.26 = sub %tmp.21 %tmp.25;
         lputv %delta.5 %tmp.26;
         symbol [ delta %delta.5 254 5 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 255 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 255 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %timeDiff.6 = local;
         symbol [ timeDiff %timeDiff.6 255 5 13 ];
         %tmp.27 = 4;
@@ -1841,8 +1841,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.29 = mul %tmp.27 %tmp.28;
         lputv %timeDiff.6 %tmp.29;
         symbol [ timeDiff %timeDiff.6 255 5 13 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 256 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 256 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %timeUTC.7 = local;
         symbol [ timeUTC %timeUTC.7 256 5 12 ];
         %tmp.30 = 720;
@@ -1854,8 +1854,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.34 = sub %tmp.32 %tmp.33;
         lputv %timeUTC.7 %tmp.34;
         symbol [ timeUTC %timeUTC.7 256 5 12 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 257 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 257 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %newt.8 = local;
         symbol [ newt %newt.8 257 5 9 ];
         %tmp.35 = self;
@@ -1875,7 +1875,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.45 = invoke %tmp.35 %tmp.36(%tmp.44);
         lputv %newt.8 %tmp.45;
         symbol [ newt %newt.8 257 5 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 259 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 259 1 ]
         %tmp.46 = self;
         symbol [ calcEquationOfTime %tmp.47 259 10 28 ];
         %tmp.47 = getv function %tmp.46 :calcEquationOfTime;
@@ -1884,7 +1884,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
         lputv %eqTime.2 %tmp.49;
         symbol [ eqTime %eqTime.2 259 1 7 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 260 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 260 1 ]
         %tmp.50 = self;
         symbol [ calcSunDeclination %tmp.51 260 12 30 ];
         %tmp.51 = getv function %tmp.50 :calcSunDeclination;
@@ -1893,7 +1893,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
         lputv %solarDec.3 %tmp.53;
         symbol [ solarDec %solarDec.3 260 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 261 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 261 1 ]
         %tmp.54 = self;
         symbol [ calcHourAngleSunset %tmp.55 261 13 32 ];
         %tmp.55 = getv function %tmp.54 :calcHourAngleSunset;
@@ -1904,7 +1904,7 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.59 = invoke %tmp.54 %tmp.55(%tmp.57, %tmp.58);
         lputv %hourAngle.4 %tmp.59;
         symbol [ hourAngle %hourAngle.4 261 1 10 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 262 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 262 1 ]
         symbol [ longitude %tmp.61 262 9 18 ];
         %tmp.61 = getv ? :longitude;
         %tmp.62 = self;
@@ -1916,14 +1916,14 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.66 = sub %tmp.61 %tmp.65;
         lputv %delta.5 %tmp.66;
         symbol [ delta %delta.5 262 1 6 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 263 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 263 1 ]
         %tmp.67 = 4;
         %tmp.68 = lgetv %delta.5;
         symbol [ delta %tmp.68 263 16 21 ];
         %tmp.69 = mul %tmp.67 %tmp.68;
         lputv %timeDiff.6 %tmp.69;
         symbol [ timeDiff %timeDiff.6 263 1 9 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 264 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 264 1 ]
         %tmp.70 = 720;
         %tmp.71 = lgetv %timeDiff.6;
         symbol [ timeDiff %tmp.71 264 17 25 ];
@@ -1933,8 +1933,8 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.74 = sub %tmp.72 %tmp.73;
         lputv %timeUTC.7 %tmp.74;
         symbol [ timeUTC %timeUTC.7 264 1 8 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 265 1 ]
-        [ "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 265 1 ]
+        [ "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_start" "D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop" ]
         %localTime.9 = local;
         symbol [ localTime %localTime.9 265 5 14 ];
         %tmp.75 = lgetv %timeUTC.7;
@@ -1946,69 +1946,69 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_
         %tmp.80 = add %tmp.75 %tmp.79;
         lputv %localTime.9 %tmp.80;
         symbol [ localTime %localTime.9 265 5 14 ];
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 266 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_stmt:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 266 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_stmt:
         %tmp.81 = lgetv %localTime.9;
         symbol [ localTime %tmp.81 266 5 14 ];
         %tmp.82 = 1440;
         %tmp.83 = gt %tmp.81 %tmp.82;
-        bf %tmp.83 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_21_266_47_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 266 22 ]
+        bf %tmp.83 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_21_266_47_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 266 22 ]
         %tmp.84 = lgetv %localTime.9;
         symbol [ localTime %tmp.84 266 32 41 ];
         %tmp.85 = 1440;
         %tmp.86 = sub %tmp.84 %tmp.85;
         lputv %localTime.9 %tmp.86;
         symbol [ localTime %localTime.9 266 22 31 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_21_266_47_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 267 1 ]
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_stmt:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_21_266_47_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_266_1_266_47_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 267 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_stmt:
         %tmp.87 = lgetv %localTime.9;
         symbol [ localTime %tmp.87 267 5 14 ];
         %tmp.88 = 0;
         %tmp.89 = lt %tmp.87 %tmp.88;
-        bf %tmp.89 @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_true:
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_18_267_44_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 267 19 ]
+        bf %tmp.89 @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_true:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_18_267_44_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 267 19 ]
         %tmp.90 = lgetv %localTime.9;
         symbol [ localTime %tmp.90 267 29 38 ];
         %tmp.91 = 1440;
         %tmp.92 = add %tmp.90 %tmp.91;
         lputv %localTime.9 %tmp.92;
         symbol [ localTime %localTime.9 267 19 28 ];
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_18_267_44_stop:
-        goto @_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 268 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_18_267_44_stop:
+        goto @D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end;
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_267_1_267_44_if_end:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 268 1 ]
         %tmp.93 = lgetv %localTime.9;
         symbol [ localTime %tmp.93 268 8 17 ];
         ret %tmp.93;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_248_1_269_1_stop:
     }
-    [ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 271; @symbol_functiondef = [setCurrentDate,271,10,24]; @symbol_param<0> = [y,271,25,26]; @symbol_param<1> = [m,271,28,29]; @symbol_param<2> = [d,271,31,32]; ]
+    [ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 271; @symbol_functiondef = [setCurrentDate,271,10,24]; @symbol_param<0> = [y,271,25,26]; @symbol_param<1> = [m,271,28,29]; @symbol_param<2> = [d,271,31,32]; ]
     function setCurrentDate(y, m, d) {
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_272_1_278_1_start:
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 273 1 ]
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_272_1_278_1_start:
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 273 1 ]
         %tmp.1 = lgetv %y;
         symbol [ y %tmp.1 273 10 11 ];
         symbol [ m_year ? 273 1 7 ];
         putv self :m_year %tmp.1;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 274 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 274 1 ]
         %tmp.2 = lgetv %m;
         symbol [ m %tmp.2 274 11 12 ];
         symbol [ m_month ? 274 1 8 ];
         putv self :m_month %tmp.2;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 275 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 275 1 ]
         %tmp.3 = lgetv %d;
         symbol [ d %tmp.3 275 9 10 ];
         symbol [ m_day ? 275 1 6 ];
         putv self :m_day %tmp.3;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 276 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 276 1 ]
         %tmp.4 = self;
         symbol [ calcJD %tmp.5 276 14 20 ];
         %tmp.5 = getv function %tmp.4 :calcJD;
@@ -2021,13 +2021,13 @@ _Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_272_1_278_1_
         %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7, %tmp.8);
         symbol [ julianDate ? 276 1 11 ];
         putv self :julianDate %tmp.9;
-[ "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc" 277 1 ]
+[ "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc" 277 1 ]
         symbol [ julianDate %tmp.11 277 8 18 ];
         %tmp.11 = getv ? :julianDate;
         ret %tmp.11;
-_Users_simon_Documents_Garmin_Source_A168WEGG_1BEF_source_suncal_mc_272_1_278_1_stop:
+D__OneDrive_Garmin_Source_Casio_A168WEGG_1BEF_source_suncal_mc_272_1_278_1_stop:
     }
 }
-[ @file = "/Users/simon/Documents/Garmin/Source/A168WEGG-1BEF/source/suncal.mc"; @line = 1; ]
+[ @file = "D:\OneDrive\Garmin\Source\Casio A168WEGG-1BEF\source\suncal.mc"; @line = 1; ]
 <init> {
 }

@@ -14,6 +14,8 @@ module Rez {
     module Fonts {
         (:initialized) var id_font_black_diamond as ResourceId;
         (:initialized) var id_font_CleanAnalogFont as ResourceId;
+        (:initialized) var id_font_tiny as ResourceId;
+        (:initialized) var id_font_tiny_lg as ResourceId;
     } // Fonts
 
     module JsonData {
@@ -27,6 +29,7 @@ module Rez {
 
     module Strings {
         (:initialized) var Belgrade as ResourceId;
+        (:initialized) var lowPowerSecondsTitle as ResourceId;
         (:initialized) var bodyBattery as ResourceId;
         (:initialized) var kmmilesTitle as ResourceId;
         (:initialized) var Casablanca as ResourceId;
@@ -60,6 +63,7 @@ module Rez {
         (:initialized) var Amsterdam as ResourceId;
         (:initialized) var Abu as ResourceId;
         (:initialized) var Seoul as ResourceId;
+        (:initialized) var fontSizeDefault as ResourceId;
         (:initialized) var temperature as ResourceId;
         (:initialized) var Yekaterinburg as ResourceId;
         (:initialized) var Helsinki as ResourceId;
@@ -84,6 +88,7 @@ module Rez {
         (:initialized) var Vladivostok as ResourceId;
         (:initialized) var mmHg as ResourceId;
         (:initialized) var historyPressure as ResourceId;
+        (:initialized) var topTextTitle as ResourceId;
         (:initialized) var Nairobi as ResourceId;
         (:initialized) var Brisbane as ResourceId;
         (:initialized) var digitalClock as ResourceId;
@@ -100,13 +105,16 @@ module Rez {
         (:initialized) var Brussels as ResourceId;
         (:initialized) var Jerusalem as ResourceId;
         (:initialized) var Perth as ResourceId;
+        (:initialized) var fontSizeSmaller as ResourceId;
         (:initialized) var Greenwich as ResourceId;
         (:initialized) var heartRate as ResourceId;
         (:initialized) var Nuku as ResourceId;
         (:initialized) var totalCal as ResourceId;
         (:initialized) var altitude as ResourceId;
+        (:initialized) var fontSizeLarger as ResourceId;
         (:initialized) var timeToRecovery as ResourceId;
         (:initialized) var moveBarOnTitle as ResourceId;
+        (:initialized) var touchOnTitle as ResourceId;
         (:initialized) var Sri as ResourceId;
         (:initialized) var totalFloors as ResourceId;
         (:initialized) var Auckland as ResourceId;
@@ -135,6 +143,7 @@ module Rez {
         (:initialized) var Central_Time as ResourceId;
         (:initialized) var meanSeaLevelPressure as ResourceId;
         (:initialized) var Krasnoyarsk as ResourceId;
+        (:initialized) var fontSizeAdjustTitle as ResourceId;
         (:initialized) var kilometers as ResourceId;
     } // Strings
 
