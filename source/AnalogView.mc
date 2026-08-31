@@ -3,6 +3,7 @@
 // Application Developer Agreement.
 // Written by Simon Edwards - 2018
 // ===== CASIO A171WE-1A STYLE WATCH FACE DRAWING =====
+
 // 1.4.8 - Fenix 9 support
 // 1.4.7 - FR70/170/170m and D2 Mach 2 Pro support
 // 1.4.6 - NOT RELEASED YET
